@@ -7,7 +7,7 @@
  * Do not list 'RUSSEL BACALL', since he has a Bacall Number of 0.
  */
 SELECT DISTINCT
-    first_name||' '||last_name AS "Actor Name"
+    first_name || ' ' || last_name AS "Actor Name"
 FROM actor
 INNER JOIN film_actor USING (actor_id)
 WHERE film_id IN (
