@@ -3,7 +3,7 @@
  */
 
 SELECT DISTINCT
-    first_name||' '||last_name AS "Actor Name"
+    first_name  ||' '||  last_name AS "Actor Name"
 FROM actor
 INNER JOIN film_actor USING (actor_id)
 INNER JOIN (
