@@ -16,4 +16,5 @@ SELECT
 FROM
     film) AS subquery
 WHERE special_feature = 'Behind the Scenes') AS subquery
-USING (film_id);
+USING (film_id)
+ORDER BY "Actor Name";
